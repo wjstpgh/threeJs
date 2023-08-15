@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "vercel --prod"
+    "deploy": "vercel --prod",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "dat.gui": "^0.7.9",
