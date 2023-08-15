@@ -1,16 +1,20 @@
-# Three.js Journey
+# Three.js 예제 페이지
 
 ## Setup
-Download [Node.js](https://nodejs.org/en/download/).
+Node.JS 다운로드 [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:
 
 ``` bash
 # Install dependencies (only the first time)
-npm install
+yarn install
 
 # Run the local server at localhost:8080
-npm run dev
+yarn dev
 
 # Build for production in the dist/ directory
-npm run build
+yarn build
 ```
+
+## 배포 링크
+https://three-psi-dusky.vercel.app/
+
