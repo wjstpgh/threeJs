@@ -26,6 +26,7 @@ export default {
         light: resolve(__dirname, "src/light/index.html"),
         material: resolve(__dirname, "src/material/index.html"),
         screenresize: resolve(__dirname, "src/screenresize/index.html"),
+        shadow: resolve(__dirname, "src/shadow/index.html"),
         texture: resolve(__dirname, "src/texture/index.html"),
         transform: resolve(__dirname, "src/transform/index.html"),
       },
