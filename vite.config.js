@@ -23,6 +23,7 @@ export default {
         camera: resolve(__dirname, "src/camera/index.html"),
         debug: resolve(__dirname, "src/debug/index.html"),
         geometries: resolve(__dirname, "src/geometries/index.html"),
+        hountedhouse: resolve(__dirname, "src/hountedhouse/index.html"),
         light: resolve(__dirname, "src/light/index.html"),
         material: resolve(__dirname, "src/material/index.html"),
         screenresize: resolve(__dirname, "src/screenresize/index.html"),
