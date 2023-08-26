@@ -22,6 +22,7 @@ export default {
         animation: resolve(__dirname, "src/animation/index.html"),
         camera: resolve(__dirname, "src/camera/index.html"),
         debug: resolve(__dirname, "src/debug/index.html"),
+        galaxy: resolve(__dirname, "src/galaxy/index.html"),
         geometries: resolve(__dirname, "src/geometries/index.html"),
         hountedhouse: resolve(__dirname, "src/hountedhouse/index.html"),
         light: resolve(__dirname, "src/light/index.html"),
