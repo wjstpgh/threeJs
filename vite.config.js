@@ -26,6 +26,7 @@ export default {
         hountedhouse: resolve(__dirname, "src/hountedhouse/index.html"),
         light: resolve(__dirname, "src/light/index.html"),
         material: resolve(__dirname, "src/material/index.html"),
+        particles: resolve(__dirname, "src/particles/index.html"),
         screenresize: resolve(__dirname, "src/screenresize/index.html"),
         shadow: resolve(__dirname, "src/shadow/index.html"),
         texture: resolve(__dirname, "src/texture/index.html"),
