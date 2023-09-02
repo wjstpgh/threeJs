@@ -29,6 +29,7 @@ export default {
         material: resolve(__dirname, "src/material/index.html"),
         particles: resolve(__dirname, "src/particles/index.html"),
         screenresize: resolve(__dirname, "src/screenresize/index.html"),
+        scrollanimation: resolve(__dirname, "src/scrollanimation/index.html"),
         shadow: resolve(__dirname, "src/shadow/index.html"),
         texture: resolve(__dirname, "src/texture/index.html"),
         transform: resolve(__dirname, "src/transform/index.html"),
