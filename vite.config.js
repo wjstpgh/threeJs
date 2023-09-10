@@ -25,6 +25,7 @@ export default {
         galaxy: resolve(__dirname, "src/galaxy/index.html"),
         geometries: resolve(__dirname, "src/geometries/index.html"),
         hountedhouse: resolve(__dirname, "src/hountedhouse/index.html"),
+        importedModel: resolve(__dirname, "src/importedModel/index.html"),
         light: resolve(__dirname, "src/light/index.html"),
         material: resolve(__dirname, "src/material/index.html"),
         particles: resolve(__dirname, "src/particles/index.html"),
