@@ -21,6 +21,7 @@ export default {
         "3dtext": resolve(__dirname, "src/3dtext/index.html"),
         animation: resolve(__dirname, "src/animation/index.html"),
         camera: resolve(__dirname, "src/camera/index.html"),
+        custommodel: resolve(__dirname, "src/custommodel/index.html"),
         debug: resolve(__dirname, "src/debug/index.html"),
         galaxy: resolve(__dirname, "src/galaxy/index.html"),
         geometries: resolve(__dirname, "src/geometries/index.html"),
