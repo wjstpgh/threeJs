@@ -39,6 +39,7 @@ export default {
         screenresize: resolve(__dirname, "src/screenresize/index.html"),
         scrollanimation: resolve(__dirname, "src/scrollanimation/index.html"),
         shader: resolve(__dirname, "src/shader/index.html"),
+        shaderPattern: resolve(__dirname, "src/shaderPattern/index.html"),
         shadow: resolve(__dirname, "src/shadow/index.html"),
         texture: resolve(__dirname, "src/texture/index.html"),
         transform: resolve(__dirname, "src/transform/index.html"),
