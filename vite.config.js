@@ -34,6 +34,7 @@ export default {
         material: resolve(__dirname, "src/material/index.html"),
         particles: resolve(__dirname, "src/particles/index.html"),
         physics: resolve(__dirname, "src/physics/index.html"),
+        ragingsea: resolve(__dirname, "src/ragingsea/index.html"),
         raycaster: resolve(__dirname, "src/raycaster/index.html"),
         realisticrender: resolve(__dirname, "src/realisticrender/index.html"),
         screenresize: resolve(__dirname, "src/screenresize/index.html"),
