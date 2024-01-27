@@ -20,6 +20,7 @@ export default {
       input: {
         home: resolve(__dirname, "src/index.html"),
         "3dtext": resolve(__dirname, "src/3dtext/index.html"),
+        animatedGalaxy: resolve(__dirname, "src/animatedGalaxy/index.html"),
         animation: resolve(__dirname, "src/animation/index.html"),
         camera: resolve(__dirname, "src/camera/index.html"),
         custommodel: resolve(__dirname, "src/custommodel/index.html"),
