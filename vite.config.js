@@ -33,6 +33,7 @@ export default {
         importedModel: resolve(__dirname, "src/importedModel/index.html"),
         light: resolve(__dirname, "src/light/index.html"),
         material: resolve(__dirname, "src/material/index.html"),
+        modifiedMaterial: resolve(__dirname, "src/modifiedMaterial/index.html"),
         particles: resolve(__dirname, "src/particles/index.html"),
         physics: resolve(__dirname, "src/physics/index.html"),
         ragingsea: resolve(__dirname, "src/ragingsea/index.html"),
