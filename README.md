@@ -1,4 +1,4 @@
-# Three.js 예제 페이지
+# Three.js 예제 페이지.
 
 ## Setup
 Node.JS 다운로드 [Node.js](https://nodejs.org/en/download/).
