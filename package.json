@@ -20,6 +20,7 @@
     "cannon": "^0.6.2",
     "cannon-es": "^0.20.0",
     "path": "^0.12.7",
+    "stats.js": "^0.17.0",
     "three": "^0.153.0",
     "vercel": "^31.3.1",
     "vite-plugin-glsl": "^1.1.2"

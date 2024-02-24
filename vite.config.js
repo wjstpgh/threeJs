@@ -35,6 +35,7 @@ export default {
         material: resolve(__dirname, "src/material/index.html"),
         modifiedMaterial: resolve(__dirname, "src/modifiedMaterial/index.html"),
         particles: resolve(__dirname, "src/particles/index.html"),
+        performancetip: resolve(__dirname, "src/performancetip/index.html"),
         physics: resolve(__dirname, "src/physics/index.html"),
         postProcessing: resolve(__dirname, "src/postProcessing/index.html"),
         ragingsea: resolve(__dirname, "src/ragingsea/index.html"),
