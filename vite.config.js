@@ -31,6 +31,7 @@ export default {
         geometries: resolve(__dirname, "src/geometries/index.html"),
         hountedhouse: resolve(__dirname, "src/hountedhouse/index.html"),
         importedModel: resolve(__dirname, "src/importedModel/index.html"),
+        introProgress: resolve(__dirname, "src/introProgress/index.html"),
         light: resolve(__dirname, "src/light/index.html"),
         material: resolve(__dirname, "src/material/index.html"),
         modifiedMaterial: resolve(__dirname, "src/modifiedMaterial/index.html"),
