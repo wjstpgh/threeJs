@@ -34,6 +34,7 @@ export default {
         introProgress: resolve(__dirname, "src/introProgress/index.html"),
         light: resolve(__dirname, "src/light/index.html"),
         material: resolve(__dirname, "src/material/index.html"),
+        mixHtml: resolve(__dirname, "src/mixHtml/index.html"),
         modifiedMaterial: resolve(__dirname, "src/modifiedMaterial/index.html"),
         particles: resolve(__dirname, "src/particles/index.html"),
         performancetip: resolve(__dirname, "src/performancetip/index.html"),
