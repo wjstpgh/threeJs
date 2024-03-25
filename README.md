@@ -1,12 +1,11 @@
 # Three.js 예제 페이지
 
 ## Setup
-Node.JS 다운로드 [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:
 
 ``` bash
 # Install dependencies (only the first time)
-yarn install
+yarn
 
 # Run the local server at localhost:8080
 yarn dev
