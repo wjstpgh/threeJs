@@ -39,6 +39,7 @@ export default {
         particles: resolve(__dirname, "src/particles/index.html"),
         performancetip: resolve(__dirname, "src/performancetip/index.html"),
         physics: resolve(__dirname, "src/physics/index.html"),
+        portal: resolve(__dirname, "src/portal/index.html"),
         postProcessing: resolve(__dirname, "src/postProcessing/index.html"),
         ragingsea: resolve(__dirname, "src/ragingsea/index.html"),
         raycaster: resolve(__dirname, "src/raycaster/index.html"),
