@@ -2,6 +2,15 @@ import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
+import * as dat from "lil-gui";
+
+import firefilesVertexShader from "./shaders/fireflies/vertex.glsl";
+import firefilesFragmentShader from "./shaders/fireflies/fragment.glsl";
+import portalVertexShader from "./shaders/portal/vertex.glsl";
+import portalFragmentShader from "./shaders/portal/fragment.glsl";
+
+const debugObject = {};
+const gui = new dat.GUI({ width: 400 });
 
 // Canvas
 const canvas = document.querySelector("canvas.webgl");
@@ -33,7 +42,28 @@ bakedTexture.colorSpace = THREE.SRGBColorSpace;
 const bakedMaterial = new THREE.MeshBasicMaterial({ map: bakedTexture });
 
 const poleLightMaterial = new THREE.MeshBasicMaterial({ color: 0xffffe5 });
-const portalLightMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
+
+debugObject.portalColorStart = "#000000";
+debugObject.portalColorEnd = "#ffffff";
+
+gui.addColor(debugObject, "portalColorStart").onChange(() => {
+  portalLightMaterial.uniforms.uColorStart.value.set(
+    debugObject.portalColorStart
+  );
+});
+gui.addColor(debugObject, "portalColorEnd").onChange(() => {
+  portalLightMaterial.uniforms.uColorEnd.value.set(debugObject.portalColorEnd);
+});
+
+const portalLightMaterial = new THREE.ShaderMaterial({
+  uniforms: {
+    uTime: { value: 0 },
+    uColorStart: { value: new THREE.Color(debugObject.portalColorStart) },
+    uColorEnd: { value: new THREE.Color(debugObject.portalColorEnd) },
+  },
+  vertexShader: portalVertexShader,
+  fragmentShader: portalFragmentShader,
+});
 
 gltfLoader.load("/portal.glb", (gltf) => {
   //   gltf.scene.traverse((child) => {
@@ -57,6 +87,52 @@ gltfLoader.load("/portal.glb", (gltf) => {
 });
 
 /**
+ * FireFlies
+ */
+const firefilesGeometry = new THREE.BufferGeometry();
+const firefilesCount = 30;
+const positionArray = new Float32Array(firefilesCount * 3);
+const scaleArray = new Float32Array(firefilesCount);
+
+for (let i = 0; i < firefilesCount; i++) {
+  positionArray[i * 3 + 0] = (Math.random() - 0.5) * 4;
+  positionArray[i * 3 + 1] = Math.random() * 1.5;
+  positionArray[i * 3 + 2] = (Math.random() - 0.5) * 4;
+
+  scaleArray[i] = Math.random();
+}
+firefilesGeometry.setAttribute(
+  "position",
+  new THREE.BufferAttribute(positionArray, 3)
+);
+firefilesGeometry.setAttribute(
+  "aScale",
+  new THREE.BufferAttribute(scaleArray, 1)
+);
+
+const firefilesMaterial = new THREE.ShaderMaterial({
+  uniforms: {
+    uPixelRatio: { value: Math.min(window.devicePixelRatio, 2) },
+    uSize: { value: 100 },
+    uTime: { value: 0 },
+  },
+  vertexShader: firefilesVertexShader,
+  fragmentShader: firefilesFragmentShader,
+  blending: THREE.AdditiveBlending,
+  depthWrite: false,
+  transparent: true,
+});
+
+gui
+  .add(firefilesMaterial.uniforms.uSize, "value")
+  .min(0)
+  .max(500)
+  .step(1)
+  .name("firefliesSize");
+
+const firefiles = new THREE.Points(firefilesGeometry, firefilesMaterial);
+scene.add(firefiles);
+/**
  * Sizes
  */
 const sizes = {
@@ -76,6 +152,11 @@ window.addEventListener("resize", () => {
   // Update renderer
   renderer.setSize(sizes.width, sizes.height);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+  firefilesMaterial.uniforms.uPixelRatio.value = Math.min(
+    window.devicePixelRatio,
+    2
+  );
 });
 
 /**
@@ -107,6 +188,11 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
+debugObject.clearColor = "#201919";
+renderer.setClearColor(debugObject.clearColor);
+gui.addColor(debugObject, "clearColor").onChange(() => {
+  renderer.setClearColor(debugObject.clearColor);
+});
 /**
  * Animate
  */
@@ -114,6 +200,9 @@ const clock = new THREE.Clock();
 
 const tick = () => {
   const elapsedTime = clock.getElapsedTime();
+
+  firefilesMaterial.uniforms.uTime.value = elapsedTime;
+  portalLightMaterial.uniforms.uTime.value = elapsedTime;
 
   // Update controls
   controls.update();
