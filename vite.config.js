@@ -19,38 +19,79 @@ export default {
     rollupOptions: {
       input: {
         home: resolve(__dirname, "src/index.html"),
-        "3dtext": resolve(__dirname, "src/3dtext/index.html"),
-        animatedGalaxy: resolve(__dirname, "src/animatedGalaxy/index.html"),
-        animation: resolve(__dirname, "src/animation/index.html"),
-        camera: resolve(__dirname, "src/camera/index.html"),
-        custommodel: resolve(__dirname, "src/custommodel/index.html"),
-        codeStructing: resolve(__dirname, "src/codeStructing/index.html"),
-        debug: resolve(__dirname, "src/debug/index.html"),
-        environmentmap: resolve(__dirname, "src/environmentmap/index.html"),
-        galaxy: resolve(__dirname, "src/galaxy/index.html"),
-        geometries: resolve(__dirname, "src/geometries/index.html"),
-        hountedhouse: resolve(__dirname, "src/hountedhouse/index.html"),
-        importedModel: resolve(__dirname, "src/importedModel/index.html"),
-        introProgress: resolve(__dirname, "src/introProgress/index.html"),
-        light: resolve(__dirname, "src/light/index.html"),
-        material: resolve(__dirname, "src/material/index.html"),
-        mixHtml: resolve(__dirname, "src/mixHtml/index.html"),
-        modifiedMaterial: resolve(__dirname, "src/modifiedMaterial/index.html"),
-        particles: resolve(__dirname, "src/particles/index.html"),
-        performancetip: resolve(__dirname, "src/performancetip/index.html"),
-        physics: resolve(__dirname, "src/physics/index.html"),
+
+        basic: resolve(__dirname, "src/basic/index.html"),
+        transform: resolve(__dirname, "src/basic/transform/index.html"),
+        animation: resolve(__dirname, "src/basic/animation/index.html"),
+        camera: resolve(__dirname, "src/basic/camera/index.html"),
+        screenresize: resolve(__dirname, "src/basic/screenresize/index.html"),
+        geometries: resolve(__dirname, "src/basic/geometries/index.html"),
+        debug: resolve(__dirname, "src/basic/debug/index.html"),
+        texture: resolve(__dirname, "src/basic/texture/index.html"),
+        material: resolve(__dirname, "src/basic/material/index.html"),
+        "3dtext": resolve(__dirname, "src/basic/3dtext/index.html"),
+
+        classic: resolve(__dirname, "src/classic/index.html"),
+        light: resolve(__dirname, "src/classic/light/index.html"),
+        shadow: resolve(__dirname, "src/classic/shadow/index.html"),
+        hountedhouse: resolve(__dirname, "src/classic/hountedhouse/index.html"),
+        particles: resolve(__dirname, "src/classic/particles/index.html"),
+        galaxy: resolve(__dirname, "src/classic/galaxy/index.html"),
+        scrollanimation: resolve(
+          __dirname,
+          "src/classic/scrollanimation/index.html"
+        ),
+
+        advanced: resolve(__dirname, "src/advanced/index.html"),
+        physics: resolve(__dirname, "src/advanced/physics/index.html"),
+        importedModel: resolve(
+          __dirname,
+          "src/advanced/importedModel/index.html"
+        ),
+        raycaster: resolve(__dirname, "src/advanced/raycaster/index.html"),
+        custommodel: resolve(__dirname, "src/advanced/custommodel/index.html"),
+        environmentmap: resolve(
+          __dirname,
+          "src/advanced/environmentmap/index.html"
+        ),
+        realisticrender: resolve(
+          __dirname,
+          "src/advanced/realisticrender/index.html"
+        ),
+        codeStructing: resolve(
+          __dirname,
+          "src/advanced/codeStructing/index.html"
+        ),
+
+        shaders: resolve(__dirname, "src/shaders/index.html"),
+        shader: resolve(__dirname, "src/shaders/shader/index.html"),
+        shaderPattern: resolve(
+          __dirname,
+          "src/shaders/shaderPattern/index.html"
+        ),
+        ragingsea: resolve(__dirname, "src/shaders/ragingsea/index.html"),
+        animatedGalaxy: resolve(
+          __dirname,
+          "src/shaders/animatedGalaxy/index.html"
+        ),
+        modifiedMaterial: resolve(
+          __dirname,
+          "src/shaders/modifiedMaterial/index.html"
+        ),
+
+        extra: resolve(__dirname, "src/extra/index.html"),
+        postProcessing: resolve(
+          __dirname,
+          "src/extra/postProcessing/index.html"
+        ),
+        performancetip: resolve(
+          __dirname,
+          "src/extra/performancetip/index.html"
+        ),
+        introProgress: resolve(__dirname, "src/extra/introProgress/index.html"),
+        mixHtml: resolve(__dirname, "src/extra/mixHtml/index.html"),
+
         portal: resolve(__dirname, "src/portal/index.html"),
-        postProcessing: resolve(__dirname, "src/postProcessing/index.html"),
-        ragingsea: resolve(__dirname, "src/ragingsea/index.html"),
-        raycaster: resolve(__dirname, "src/raycaster/index.html"),
-        realisticrender: resolve(__dirname, "src/realisticrender/index.html"),
-        screenresize: resolve(__dirname, "src/screenresize/index.html"),
-        scrollanimation: resolve(__dirname, "src/scrollanimation/index.html"),
-        shader: resolve(__dirname, "src/shader/index.html"),
-        shaderPattern: resolve(__dirname, "src/shaderPattern/index.html"),
-        shadow: resolve(__dirname, "src/shadow/index.html"),
-        texture: resolve(__dirname, "src/texture/index.html"),
-        transform: resolve(__dirname, "src/transform/index.html"),
       },
     },
   },
