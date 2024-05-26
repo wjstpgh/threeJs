@@ -79,6 +79,7 @@ export default {
           "src/shaders/modifiedMaterial/index.html"
         ),
         coffeeSmoke: resolve(__dirname, "src/shaders/coffeeSmoke/index.html"),
+        hologram: resolve(__dirname, "src/shaders/hologram/index.html"),
 
         extra: resolve(__dirname, "src/extra/index.html"),
         postProcessing: resolve(
