@@ -81,6 +81,7 @@ export default {
         coffeeSmoke: resolve(__dirname, "src/shaders/coffeeSmoke/index.html"),
         hologram: resolve(__dirname, "src/shaders/hologram/index.html"),
         fireworks: resolve(__dirname, "src/shaders/fireworks/index.html"),
+        lightShading: resolve(__dirname, "src/shaders/lightShading/index.html"),
 
         extra: resolve(__dirname, "src/extra/index.html"),
         postProcessing: resolve(
