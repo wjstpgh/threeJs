@@ -12,7 +12,7 @@ varying float vElevation;
 varying vec3 vNormal;
 varying vec3 vPosition;
 
-#include ../includes/perlinClassic3D.glsl
+#include ../includes/perlinClassic3d.glsl
 
 float waveElevation(vec3 position)
 {
