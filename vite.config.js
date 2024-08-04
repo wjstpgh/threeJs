@@ -87,6 +87,7 @@ export default {
           "src/shaders/ragingSeaShading/index.html"
         ),
         halfton: resolve(__dirname, "src/shaders/halfton/index.html"),
+        earth: resolve(__dirname, "src/shaders/earth/index.html"),
 
         extra: resolve(__dirname, "src/extra/index.html"),
         postProcessing: resolve(
