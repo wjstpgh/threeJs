@@ -88,6 +88,7 @@ export default {
         ),
         halfton: resolve(__dirname, "src/shaders/halfton/index.html"),
         earth: resolve(__dirname, "src/shaders/earth/index.html"),
+        particles: resolve(__dirname, "src/shaders/particles/index.html"),
 
         extra: resolve(__dirname, "src/extra/index.html"),
         postProcessing: resolve(
