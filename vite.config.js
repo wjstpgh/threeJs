@@ -95,6 +95,7 @@ export default {
           "src/shaders/particlesMorphing/index.html"
         ),
         gpgpu: resolve(__dirname, "src/shaders/gpgpu/index.html"),
+        wobbly: resolve(__dirname, "src/shaders/wobbly/index.html"),
 
         extra: resolve(__dirname, "src/extra/index.html"),
         postProcessing: resolve(
