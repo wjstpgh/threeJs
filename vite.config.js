@@ -97,6 +97,10 @@ export default {
         gpgpu: resolve(__dirname, "src/shaders/gpgpu/index.html"),
         wobbly: resolve(__dirname, "src/shaders/wobbly/index.html"),
         slicedModel: resolve(__dirname, "src/shaders/slicedModel/index.html"),
+        proceduralTerrain: resolve(
+          __dirname,
+          "src/shaders/proceduralTerrain/index.html"
+        ),
 
         extra: resolve(__dirname, "src/extra/index.html"),
         postProcessing: resolve(
