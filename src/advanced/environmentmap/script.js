@@ -4,7 +4,7 @@ import * as dat from "lil-gui";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader";
 import { RGBELoader } from "three/addons/loaders/RGBELoader";
 import { EXRLoader } from "three/addons/loaders/EXRLoader";
-import { GroundProjectedSkybox } from "three/addons/objects/GroundProjectedSkybox";
+// import { GroundProjectedSkybox } from "three/addons/objects/GroundProjectedSkybox";
 
 const gltfLoader = new GLTFLoader();
 const cubeTextureLoader = new THREE.CubeTextureLoader();

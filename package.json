@@ -21,8 +21,10 @@
     "cannon-es": "^0.20.0",
     "path": "^0.12.7",
     "stats.js": "^0.17.0",
-    "three": "^0.153.0",
-    "three-custom-shader-material": "5.4",
+    "three": "^0.170.0",
+    "three-bvh-csg": "^0.0.16",
+    "three-custom-shader-material": "^6.1.1",
+    "three-mesh-bvh": "^0.8.2",
     "vercel": "^31.3.1",
     "vite-plugin-glsl": "^1.1.2"
   }
